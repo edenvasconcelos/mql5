@@ -8,4 +8,16 @@ struct InformacaoGeral {
    double minima_mes;
    double maxima_mes;
    double preco;
+   bool newBar;
+   bool newDay;
+};
+
+struct InformacaoRisco {
+   double valor_base_referencia;
+   double perda_dia;
+   double perda_semana;
+   double perda_mes;
+   double ganho_dia;
+   double ganho_semana;
+   double ganho_mes;
 };
