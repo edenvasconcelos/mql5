@@ -10,6 +10,13 @@ struct InformacaoGeral {
    double preco;
    bool newBar;
    bool newDay;
+   double fator_tp;
+   double fator_sl;
+   
+   double profit_dia;
+   double profit_semana;
+   double profit_mes;
+   
 };
 
 struct InformacaoRisco {
