@@ -10,6 +10,8 @@ struct InformacaoGeral {
    double preco;
    bool newBar;
    bool newDay;
+   
+   double lot;
    double fator_tp;
    double fator_sl;
    
