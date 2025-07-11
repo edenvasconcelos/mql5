@@ -14,6 +14,7 @@ struct InformacaoGeral {
    double lot;
    double fator_tp;
    double fator_sl;
+   double stop_move;
    
    double profit_dia;
    double profit_semana;
