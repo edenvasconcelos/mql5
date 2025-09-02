@@ -20,6 +20,9 @@ struct InformacaoGeral {
    double profit_semana;
    double profit_mes;
    
+   double buy_force;
+   double sell_force;
+   
 };
 
 struct InformacaoRisco {
