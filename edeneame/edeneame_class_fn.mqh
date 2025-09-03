@@ -69,3 +69,22 @@ CandleType identificarTipoCandle(MqlRates &rates[])
 
 // Exemplo de uso:
 // CandleType
+
+// Função para verificar se é um novo dia
+bool verificarNovoDia()
+{
+   static int ultimoDia = -1;
+
+   datetime agora = TimeCurrent();
+   MqlDateTime dataAtual;
+   TimeToStruct(agora, dataAtual);
+
+   if(dataAtual.day != ultimoDia)
+   {
+   //   Print("🌅 Novo dia detectado: ", TimeToString(agora, TIME_DATE));
+      ultimoDia = dataAtual.day;
+      return true;
+      // Lógica personalizada para o início do dia
+   }
+   return false;
+}
