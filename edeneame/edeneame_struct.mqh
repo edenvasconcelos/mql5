@@ -16,6 +16,7 @@ struct InformacaoGeral {
    double fator_sl;
    double stop_move;
    
+   bool risco_lucro_segmentado;
    double profit_dia;
    double profit_semana;
    double profit_mes;
@@ -26,6 +27,7 @@ struct InformacaoGeral {
 };
 
 struct InformacaoRisco {
+   bool   risco_lucro_segmentado;
    double valor_base_referencia;
    double perda_dia;
    double perda_semana;
