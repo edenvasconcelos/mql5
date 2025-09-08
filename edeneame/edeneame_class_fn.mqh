@@ -88,3 +88,4 @@ bool verificarNovoDia()
    }
    return false;
 }
+
