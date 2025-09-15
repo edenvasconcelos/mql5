@@ -1,5 +1,8 @@
 double calcularDistanciaPercentual(double percentual_perda, double volume, double saldo)
 {
+   if (volume <= 0){
+      volume = 0.01;
+   }
    double perda_maxima = saldo * (percentual_perda / 100.0);
 
    double tick_value = SymbolInfoDouble(_Symbol, SYMBOL_TRADE_TICK_VALUE);
