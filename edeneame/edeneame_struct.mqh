@@ -23,6 +23,11 @@ struct InformacaoGeral {
    
    double buy_force;
    double sell_force;
+
+   double x1;
+   double x2;
+   double x3;
+   double x4;
    
 };
 

@@ -92,3 +92,24 @@ bool verificarNovoDia()
    return false;
 }
 
+//+------------------------------------------------------------------+
+//| Perceptron function                                              |
+//+------------------------------------------------------------------+
+double Perceptron(double &input_a[], double &weights[],  int input_size)
+  {
+
+// Calculate the sum
+  // if (checkParam() ) return 1;
+   
+   double sum = 0;
+   for(int i = 0; i < input_size; i++)
+     {
+     // Print("input_"+IntegerToString(i)+":"+DoubleToString(input_a[i]));
+      sum += input_a[i] * weights[i];
+     }
+
+   double output = sum;
+
+   return(output);
+  } 
+ 
