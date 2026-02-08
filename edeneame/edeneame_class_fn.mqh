@@ -1,3 +1,25 @@
+
+//+------------------------------------------------------------------+
+//| Função que retorna o percentual da distância                     |
+//| entre dois valores em relação a um valor de referência           |
+//+------------------------------------------------------------------+
+double calcularPercentualDistancia(double valor1, double valor2, double referencia)
+{
+   // Calcula a distância absoluta entre os dois valores
+   double distancia = MathAbs(valor1 - valor2);
+   
+   // Evita divisão por zero
+   if(referencia == 0.0)
+      return 0.0;
+   
+   // Calcula o percentual da distância em relação ao valor de referência
+   double percentual = ((referencia-valor1) / distancia ) * 100.0;
+   
+   return percentual;
+}
+
+
+
 //+------------------------------------------------------------------+
 //| Função para calcular distância em pontos e ticks                 |
 //+------------------------------------------------------------------+
