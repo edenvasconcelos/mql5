@@ -1,3 +1,24 @@
+//+------------------------------------------------------------------+
+//| Função para calcular distância em pontos e ticks                 |
+//+------------------------------------------------------------------+
+int calcularDistanciaInPoints(double preco1, double preco2)
+{
+   // Obtém informações do ativo atual
+   double point     = SymbolInfoDouble(_Symbol, SYMBOL_POINT);        // tamanho de 1 ponto
+   double tick_size = SymbolInfoDouble(_Symbol, SYMBOL_TRADE_TICK_SIZE); // tamanho de 1 tick
+   
+   // Diferença absoluta entre os preços
+   double diferenca = MathAbs(preco1 - preco2);
+   
+   // Distância em pontos
+   int distancia = (int)MathRound(diferenca / point);
+   
+   // Distância em ticks
+   int distanciaEmTicks = (int)MathRound(diferenca / tick_size);
+   
+   return distancia;
+}
+
 double calcularDistanciaPercentual(double percentual_perda, double volume, double saldo)
 {
    if (volume <= 0){
