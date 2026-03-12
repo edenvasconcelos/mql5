@@ -24,11 +24,15 @@ struct InformacaoGeral {
    double buy_force;
    double sell_force;
 
-   int param;
+   double param;
    double x1;
    double x2;
    double x3;
    double x4;
+   double x5;
+   
+   double fator_mg;
+   int qtd_mg;
    
 };
 
@@ -42,3 +46,11 @@ struct InformacaoRisco {
    double ganho_semana;
    double ganho_mes;
 };
+
+struct Martingale {
+   double lotMg;
+   int tpMg;
+   double lossAcm;   
+};
+
+
